@@ -34,11 +34,12 @@
 
 import { ref } from 'vue'
 const state = ref(0)
+let n = state.value
 function increment() {
   state.value++
+  n++
 }
-let n = state.value
-n++
+
 </script>
 
 <template>
